@@ -237,7 +237,7 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, TextSendMessage(text = "已收到您的訂單，您訂購的是" + message))
     # 截止&統計訊息
     elif message == "截止":
-        if userID == "":
+        if userID == "[my userid]":
             order()
             m = ""
             j = 0
